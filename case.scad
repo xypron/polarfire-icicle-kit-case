@@ -313,8 +313,8 @@ module top() {
             rotate([0, 90, 0])
                 cylinder(h = 20, r = 6, center = true);
             // switch
-            translate([-4, 64.4, -1])
-                cube([10.3, 10, 18]);
+            translate([-4, 64.4, 4])
+                cube([10.3, 10, 13]);
             // Eth J1
             translate([175, 65.3, -1])
                 cube([18, 18.5, 13.5]);
@@ -469,8 +469,4 @@ top();
 
 rotate([0,180,0]) {
     //top();
-}
-
-rotate([0, 0, 0]) {
-    //slider();
 }
