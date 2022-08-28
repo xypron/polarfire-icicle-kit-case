@@ -311,12 +311,12 @@ module top() {
             // power
             translate([0, 87.4, 6.9])
             rotate([0, 90, 0])
-                cylinder(h = 20, r = 4, center = true);
+                cylinder(h = 20, r = 6, center = true);
             // switch
             translate([-4, 64.4, -1])
                 cube([10.3, 10, 18]);
             // Eth J1
-            translate([175, 64.8, -1])
+            translate([175, 65.3, -1])
                 cube([18, 18.5, 13.5]);
             // Eth J2
             translate([175, 91, -1])
@@ -397,11 +397,17 @@ module top() {
     translate([25.4 * .165, 25.4 * .165, 0]) {
         // outer
         support_t();
+        translate([-4, 0, 15])
+            cube([4, 2, 30], center = true);
         translate([25.4 * 6.503, 25.4 * 0, 0]) {
             support_t();
+            translate([8.5 , 0, 15])
+                cube([13, 2, 30], center = true);
         }
         translate([25.4 * 0, 25.4 * 4.620, 0]) {
-                support_t();
+            support_t();
+            translate([-4, 0, 15])
+                cube([4, 2, 30], center = true);
         }
         translate([25.4 * 6.672, 25.4 * 4.535, 0]) {
             difference() {
@@ -409,6 +415,8 @@ module top() {
                 translate([-8.1, 0, -1])
                     cube([10, 10, 22], center = true);
             }
+            translate([0, 5, 15])
+                cube([2, 6, 30], center = true);
         }
         translate([25.4 * 1.224, 25.4 * 0, 0]) {
             support_t();
@@ -453,13 +461,6 @@ module slider() {
         }
     }
 }
-/*
-    // switch
-    color(c = [.7, .7, .7, 1]) {
-        translate([1, 64.4, 0])
-            cube([10.3, 15.5, 9.3]);
-    }
-*/
 
 platina();
 slider();
