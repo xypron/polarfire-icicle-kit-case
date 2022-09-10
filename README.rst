@@ -8,11 +8,11 @@ You will need an M2.5 thread cutter for mounting the board with M2.5x8mm screws.
 
 .. image:: case.jpg
   :width: 400
-  :alt: Nezha D1 Case
+  :alt: PolarFire Icicle Kit Case
 
 .. image:: top.png
   :width: 400
-  :alt: Nezha D1 Case
+  :alt: PolarFire Icicle Kit Case
 
 License
 -------
